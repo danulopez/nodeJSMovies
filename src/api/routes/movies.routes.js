@@ -3,7 +3,7 @@ const {getMovies, getMovieById, getMovieByTitle, getMovieByGenre, getMovieByYear
 
 const moviesRoutes = express.Router();
 
-moviesRoutes.get("/movies", getMovies)
+moviesRoutes.get("/", getMovies)
 moviesRoutes.get("/id/:id", getMovieById)
 moviesRoutes.get("/title/:title", getMovieByTitle)
 moviesRoutes.get("/genre/:genre", getMovieByGenre)

@@ -3,7 +3,7 @@ const {getCinema, postCinema, putCinema, deleteCinema}= require ("../controllers
 
 const cinemaRoutes = express.Router();
 
-cinemaRoutes.get("/cinema", getCinema)
+cinemaRoutes.get("/", getCinema)
 cinemaRoutes.post("/", postCinema)
 cinemaRoutes.put("/", putCinema)
 cinemaRoutes.delete("/:id", deleteCinema)
